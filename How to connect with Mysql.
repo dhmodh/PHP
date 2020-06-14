@@ -1,0 +1,17 @@
+<?php
+        $servername = "localhost";
+        $database = "database";
+        $username = "debian-sys-maint";    //Your user name in MYsql.
+        $password = "XeisRB887gUaIOwu";    //Your Password in Mysql.
+
+        $conn = mysqli_connect($Severname, $username, $password, $database);
+
+        if($conn->connect_error){
+                die("Connection Failed: " .$conn->connect_error);
+        }
+
+        echo "Connected Successfully";
+
+        mysqli_close($conn);
+?>
+//In browser just searh your localhost IP (eg.192.168.54.55) and then make "/" and your file name.
